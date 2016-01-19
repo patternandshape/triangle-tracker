@@ -1,18 +1,22 @@
 var isTriangle = function(side1, side2, side3) {
-      if (side1 === side2 && side2 === side3 && side1 === side3) {
-        return true;
-        var equilateral = ("hey!!!")
-      }
-      else if (side1 === side2 || side2 === side3 || side1 === side3) {
-        return true;
-      }
+          var oneplustwo = (side1 + side2);
+          var threeplustwo = (side3 + side2);
+          var oneplusthree = (side1 + side3);
 
-      else if (side1 != side2 || side2 != side3 || side1 != side3) {
-        return true;
-      }
-      else {
-        return false;
-      }
+        if ((side3 >= oneplustwo) || (side1 >= threeplustwo) || (side2 >= oneplusthree)) {
+          return "non";
+          }
+
+         else if ((side1 === side2) && (side2 === side3) && (side1 === side3)) {
+            return "equilateral";
+          }
+          else if ((side1 === side2) || (side2 === side3) || (side1 === side3)) {
+            return "isosceles";
+          }
+
+          else if ((side1 != side2) && (side2 != side3) && (side1 != side3)) {
+            return "scalene";
+          }
 };
 
   $(document).ready(function() {
@@ -23,9 +27,21 @@ var isTriangle = function(side1, side2, side3) {
 
       var result = isTriangle(side1, side2, side3);
 
-                 // same as writing if (result === false)
-        // $(".output").text(equilateral);
+      if (result === "equilateral") {
+       $(".output").text("an equilateral");
+      }
 
+      else if (result === "isosceles") {
+       $(".output").text("an isosceles");
+      }
+
+      else if (result === "scalene") {
+       $(".output").text("a scalene");
+      }
+
+      else if (result === "non") {
+       $(".output").text("not a");
+      }
 
 
     $("#result").show();
