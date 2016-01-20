@@ -1,0 +1,17 @@
+*Do specs cover all behaviors?
+//Yes, all tests are passing, great job!
+
+*Are unit specs passing?
+//NA
+
+*Is logic easy to understand?
+//Yes
+
+*Are variables names descriptive?
+//Yes, referenced different sides and side combinations
+
+*are git commits in proper tense?
+//Yes, but more commits needed.  Do not fear the commits
+
+*Does the readme follow guidelines?
+//No readme
