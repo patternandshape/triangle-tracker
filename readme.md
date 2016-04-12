@@ -14,6 +14,9 @@ A web page that lets the user input the lengths of the sides of a triangle, and 
 * CSS
 * JavaScript
 * jQuery
+* Mocha
+* Chai
+* BDD
 * Git
 
 ##### License
